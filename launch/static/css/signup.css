@@ -1,0 +1,341 @@
+#signup {
+	background: transparent url(../img/dls.png) 0 50% no-repeat;
+	overflow: hidden;
+	
+	font-family: Georgia, sans-serif;
+	color: #666;
+}
+
+#signup label {
+	display: block;
+	margin: 1em 0;
+}
+#signup input, #signup button {
+	border: 2px solid #ccc;
+	padding: 5px;
+	font: 1.5em 'Helvetica Neue', helvetica, arial, sans-serif;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	color: #666;
+	outline: none;
+}
+#signup #id_email {
+	width: 300px;
+}
+#signup button {
+	background: #77f;
+	border-color: #77f;
+	color: white;
+}
+#signup #id_email:focus {
+	border-color: #99f;
+}
+#signup ul.errorlist {
+	list-style: none;
+	
+	border: 1px solid #f44;
+	background: #fbb;
+	color: white;
+	padding: 0 .5em;
+}
+#signup ul.errorlist li {
+	margin: .5em 0;
+}
+#signup #share {
+	border: 1px solid #333;
+	background: #eee;
+	padding: 0 1em;
+	border-radius: 5px;
+}
+#signup #share code {
+	display: block;
+	margin: 1em;
+}
+
+
+/*
+	Variable Grid System.
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+
+body {
+  min-width: 640px;
+}
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 640px;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8 {
+	position:relative;
+}
+
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+/* Grid >> 8 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+#wrapper .grid_1 {
+	width:60px;
+}
+
+#wrapper .grid_2 {
+	width:140px;
+}
+
+#wrapper .grid_3 {
+	width:220px;
+}
+
+#wrapper .grid_4 {
+	width:300px;
+}
+
+#wrapper .grid_5 {
+	width:380px;
+}
+
+#wrapper .grid_6 {
+	width:460px;
+}
+
+#wrapper .grid_7 {
+	width:540px;
+}
+
+#wrapper .grid_8 {
+	width:620px;
+}
+
+
+
+
+/* Prefix Extra Space >> 8 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+#wrapper .prefix_1 {
+	padding-left:80px;
+}
+
+#wrapper .prefix_2 {
+	padding-left:160px;
+}
+
+#wrapper .prefix_3 {
+	padding-left:240px;
+}
+
+#wrapper .prefix_4 {
+	padding-left:320px;
+}
+
+#wrapper .prefix_5 {
+	padding-left:400px;
+}
+
+#wrapper .prefix_6 {
+	padding-left:480px;
+}
+
+#wrapper .prefix_7 {
+	padding-left:560px;
+}
+
+
+
+/* Suffix Extra Space >> 8 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+#wrapper .suffix_1 {
+	padding-right:80px;
+}
+
+#wrapper .suffix_2 {
+	padding-right:160px;
+}
+
+#wrapper .suffix_3 {
+	padding-right:240px;
+}
+
+#wrapper .suffix_4 {
+	padding-right:320px;
+}
+
+#wrapper .suffix_5 {
+	padding-right:400px;
+}
+
+#wrapper .suffix_6 {
+	padding-right:480px;
+}
+
+#wrapper .suffix_7 {
+	padding-right:560px;
+}
+
+
+
+/* Push Space >> 8 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+#wrapper .push_1 {
+	left:80px;
+}
+
+#wrapper .push_2 {
+	left:160px;
+}
+
+#wrapper .push_3 {
+	left:240px;
+}
+
+#wrapper .push_4 {
+	left:320px;
+}
+
+#wrapper .push_5 {
+	left:400px;
+}
+
+#wrapper .push_6 {
+	left:480px;
+}
+
+#wrapper .push_7 {
+	left:560px;
+}
+
+
+
+/* Pull Space >> 8 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+#wrapper .pull_1 {
+	left:-80px;
+}
+
+#wrapper .pull_2 {
+	left:-160px;
+}
+
+#wrapper .pull_3 {
+	left:-240px;
+}
+
+#wrapper .pull_4 {
+	left:-320px;
+}
+
+#wrapper .pull_5 {
+	left:-400px;
+}
+
+#wrapper .pull_6 {
+	left:-480px;
+}
+
+#wrapper .pull_7 {
+	left:-560px;
+}
+
+
+
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix {
+  zoom: 1;
+}

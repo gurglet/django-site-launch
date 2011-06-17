@@ -27,11 +27,12 @@ def home(request, code=None):
 		
 			return redirect(reverse('launch_app_success'))
 		else:
-			# If user has signed up already, redirect to success page
+			# If user has signed up already, show the invite code
 			try:
 				signup = Signup.objects.get(email=form.data.get('email', ''))
-				request.session['code'] = base36.base36encode(signup.pk)
-				return redirect(reverse('launch_app_success'))
+				return render_to_response('launch/already_registered.html', {
+					'code': base36.base36encode(signup.pk)
+				}, context_instance=RequestContext(request))
 			except:
 				pass
 	return render_to_response('launch/form.html', {

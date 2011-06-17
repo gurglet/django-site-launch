@@ -1,15 +1,8 @@
-<h1>Congratulations</h1>
+{% extends "launch/base.html" %}
+{% block content %}
+<h1>Registration complete</h1>
 
-<p>This is your signup code: <code>{{code}}</code></p>
+<p>We have added your e-mail to our signup queue.</p>
 
-<p>
-	Share the code
-	
-	<span class="st_facebook_button" st_url="http://www.example.com/{{code}}" st_title="Sign up for an early invite on Django Launch Site"></span>
-	<span class="st_twitter_button" st_url="http://www.example.com/{{code}}" st_title="Sign up for an early invite on Django Launch Site"></span>
-</p>
-
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">
-stLight.options({ publisher:'c62510e6-af19-4745-a607-c73f84fbfa28' });
-</script>
+{% include "launch/share_code.html" %}
+{% endblock %}
