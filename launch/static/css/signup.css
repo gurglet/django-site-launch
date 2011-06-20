@@ -1,5 +1,15 @@
+body {
+	background: #f3f3f3;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+h1 {
+	text-shadow: 2px 2px 0 #fff;
+}
+
 #signup {
-	background: transparent url(../img/dls.png) 0 50% no-repeat;
+	margin-top: 100px;
+	background: transparent url(../img/logo.png) 0 50% no-repeat;
 	overflow: hidden;
 	
 	font-family: Georgia, sans-serif;
@@ -14,21 +24,24 @@
 	border: 2px solid #ccc;
 	padding: 5px;
 	font: 1.5em 'Helvetica Neue', helvetica, arial, sans-serif;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
 	color: #666;
 	outline: none;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-moz-transition: border-color 0.5s ease-in-out;
+	-webkit-transition: border-color 0.5s ease-in-out;
+	transition: border-color 0.5s ease-in-out;
 }
 #signup #id_email {
 	width: 300px;
 }
-#signup button {
-	background: #77f;
-	border-color: #77f;
-	color: white;
-}
 #signup #id_email:focus {
-	border-color: #99f;
+	border-color: #55626f;
+}
+#signup button {
+	background: #55626f;
+	border-color: #55626f;
+	color: white;
 }
 #signup ul.errorlist {
 	list-style: none;
@@ -37,6 +50,8 @@
 	background: #fbb;
 	color: white;
 	padding: 0 .5em;
+	
+	text-shadow: none;
 }
 #signup ul.errorlist li {
 	margin: .5em 0;
